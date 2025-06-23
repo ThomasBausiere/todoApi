@@ -23,6 +23,7 @@ public class TodoReceiveDto {
     public Todo dtoToEntity(){
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         return Todo.builder()
+
                 .title(this.getTitle())
                 .description(getDescription())
                 .createdDate(LocalDate.parse(getCreatedDate(),dateTimeFormatter))
