@@ -22,6 +22,7 @@ public class TodoService {
     //CREATE
 
     public TodoResponseDto create (TodoReceiveDto todoReceiveDto){
+        System.out.println("service:"+todoReceiveDto.getId());
         return todoRepository.save(todoReceiveDto.dtoToEntity()).entityToDto();
     }
 

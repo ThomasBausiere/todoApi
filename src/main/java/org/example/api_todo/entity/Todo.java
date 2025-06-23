@@ -34,6 +34,7 @@ public class Todo {
     public TodoResponseDto entityToDto(){
 
         return TodoResponseDto.builder()
+                .id(getId())
                 .title(getTitle())
                 .description(getDescription())
                 .createdDate(getCreatedDate())
