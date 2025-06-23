@@ -33,7 +33,7 @@ public class TodoController {
 
     @PostMapping
     public ResponseEntity<TodoResponseDto> create(@RequestBody TodoReceiveDto todoReceiveDto){
-g        return ResponseEntity.status(HttpStatus.CREATED).body(todoService.create(todoReceiveDto));
+    return ResponseEntity.status(HttpStatus.CREATED).body(todoService.create(todoReceiveDto));
     }
 
     @PutMapping("/{id}")
